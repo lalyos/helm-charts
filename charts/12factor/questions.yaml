@@ -1,0 +1,44 @@
+categories:
+- Web
+- CMS
+questions:
+- variable: title
+  description: "Header 1"
+  type: string
+  required: true
+  label: Title
+- variable: color
+  description: "The background color of the page"
+  type: enum
+  options:
+  - Salmon
+  - LightSalmon
+  - Red
+  - Pink
+  - HotPink
+  - Coral
+  - Orange
+  - Gold
+  - Khaki
+  - Plum
+  - Violet
+  - Lime
+  - PaleGreen
+  - DarkCyan
+  - LightCyan
+  - SkyBlue
+  - Tan
+  - Chocolate
+  - Silver
+  required: true
+  label: Color
+- variable: body
+  description: "The body of the page. Use embedded iframes from: https://giphy.com/"
+  type: string
+  required: false
+  label: HTML Body
+- variable: tld
+  description: "Fully qualified name will be: <RELEASE>.<NAMSPACE>.<TLD>"
+  type: string
+  required: false
+  label: Top Level Domain Name
