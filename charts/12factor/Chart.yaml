@@ -3,6 +3,6 @@ name: 12factor
 description: A Helm chart for a simple 12factor sample
 
 type: application
-version: 0.1.0
+version: 0.1.1
 
 appVersion: 1.0.0
