@@ -21,3 +21,7 @@ Custom values:
       --set color=mediumpurple \
       --set "body=this is easy" \
       --set tld=custom.k8z.eu
+
+## tl;dr
+
+Followed this guide: [Chart Releaser Action to Automate GitHub Page Charts](https://helm.sh/docs/howto/chart_releaser_action/)
