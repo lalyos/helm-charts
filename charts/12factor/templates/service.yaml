@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "chart-12factor.fullname" . }}
+  labels:
+    {{- include "chart-12factor.labels" . | nindent 4 }}
+spec:
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "chart-12factor.selectorLabels" . | nindent 4 }}

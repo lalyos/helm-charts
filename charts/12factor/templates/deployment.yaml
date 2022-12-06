@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "chart-12factor.fullname" . }}
+  labels:
+    {{- include "chart-12factor.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "chart-12factor.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+    {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      labels:
+        {{- include "chart-12factor.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: lalyos/12factor:latest
+          env:
+          - name: TITLE
+            value: {{ .Values.title | default "Welcome" }}
+          - name: BODY
+            value: {{ .Values.body }}
+          - name: COLOR
+            value: {{ .Values.color | default .Values.color | default "gray" }}
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
