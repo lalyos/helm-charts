@@ -13,14 +13,18 @@ lalyos` to see the charts.
 
 To install the 12factor chart:
 
-    helm install test lalyos/12factor
+```
+helm install test lalyos/12factor
+```
 
 Custom values:
-    helm upgrade -i test lalyos/12factor \
-      --set title=Tuesday \
-      --set color=mediumpurple \
-      --set "body=this is easy" \
-      --set tld=custom.k8z.eu
+```
+helm upgrade -i test lalyos/12factor \
+    --set title=Wednesday \
+    --set color=mediumpurple \
+    --set "body=this is easy" \
+    --set tld=custom.k8z.eu
+```
 
 ## tl;dr
 
