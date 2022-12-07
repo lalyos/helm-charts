@@ -20,14 +20,16 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: lalyos/12factor:latest
+          image: {{ .Values.image | default "lalyos/12factor:latest" }}
           env:
           - name: TITLE
             value: {{ .Values.title | default "Welcome" }}
           - name: BODY
             value: {{ .Values.body }}
           - name: COLOR
-            value: {{ .Values.color | default .Values.color | default "gray" }}
+            value: {{ .Values.color | default "gray" }}
+          - name: COLOR2
+            value: {{ .Values.color2 | default "" }}
           ports:
             - name: http
               containerPort: 80
