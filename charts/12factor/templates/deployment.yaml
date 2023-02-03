@@ -30,6 +30,8 @@ spec:
             value: {{ .Values.color | default "gray" }}
           - name: COLOR2
             value: {{ .Values.color2 | default "" }}
+          - name: BODYSTYLE
+            value: {{ .Values.bodystyle | default "" }}
           ports:
             - name: http
               containerPort: 80
