@@ -5,4 +5,4 @@ color: DarkKhaki
 
 tld: k8z.eu
 
-image: lalyos/12factor:latest
+image: lalyos/12factor:v1.1
