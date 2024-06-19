@@ -11,7 +11,11 @@ metadata:
     {{- include "chart-12factor.labels" . | nindent 4 }}
 spec:
   rules:
-    - host: {{ .Release.Name }}.{{ .Release.Namespace }}.{{ default "k8z.eu" .Values.tld }}
+    - host: {{ if .Values.fqdn -}}
+              {{ .Values.fqdn }}
+            {{- else -}}
+              {{ .Release.Name }}.{{ .Release.Namespace }}.{{ default "k8z.eu" .Values.tld }}
+            {{- end }}
       http:
         paths:
         - backend:

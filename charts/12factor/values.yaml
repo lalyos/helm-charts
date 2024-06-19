@@ -1,6 +1,7 @@
 
 title: Welcome
-body: please use title/body/color helm values
+body: please use title/body/color/tld/[fqdn] helm values 
+  host is release.ns.tld or optional fqdn can override
 color: DarkKhaki
 
 tld: k8z.eu
