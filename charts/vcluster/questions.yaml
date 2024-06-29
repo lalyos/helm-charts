@@ -1,0 +1,8 @@
+categories:
+- cluster
+questions:
+- variable: vcluster.controlPlane.ingress.host
+  description: "Name of the VCluster"
+  type: string
+  required: true
+  label: Cluster Name

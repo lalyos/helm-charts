@@ -1,0 +1,9 @@
+apiVersion: v2
+name: vcluster
+description: A Helm chart for Loft VCluster
+
+type: application
+
+version: 0.1.0
+
+appVersion: "0.20.0-beta.11"
