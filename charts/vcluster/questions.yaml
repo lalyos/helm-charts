@@ -2,7 +2,22 @@ categories:
 - cluster
 questions:
 - variable: vcluster.controlPlane.ingress.host
-  description: "Name of the VCluster"
+  description: "Ingress hostname"
   type: string
   required: true
-  label: Cluster Name
+  label: Ingress
+- variable: vcluster.controlPlane.proxy.extraSANs
+  description: "Subject Alternative Name to be valid for TLS"
+  type: string
+  required: true
+  label: Extra SANs
+- variable: vcluster.exportKubeConfig.context
+  description: "Context name"
+  type: string
+  required: true
+  label: Kubeconfig context
+- variable: vcluster.exportKubeConfig.server
+  description: "Kubeconfig Server"
+  type: string
+  required: true
+  label: Kubeconfig Server
