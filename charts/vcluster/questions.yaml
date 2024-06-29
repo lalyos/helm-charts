@@ -1,23 +1,20 @@
 categories:
 - cluster
 questions:
-- variable: vcluster.controlPlane.ingress.host
-  description: "Ingress hostname"
+- variable: name
+  description: "cluster, domain, context name"
   type: string
   required: true
-  label: Ingress
-- variable: vcluster.controlPlane.proxy.extraSANs[0]
-  description: "Subject Alternative Name to be valid for TLS"
-  type: string
+  label: VCluster Name
+- variable: version
+  description: "k3s release"
+  type: enum
+  options:
+  - v1.25.16+k3s4
+  - v1.26.15+k3s1
+  - v1.27.15+k3s1
+  - v1.28.11+k3s1
+  - v1.29.6+k3s1
+  - v1.30.2+k3s1
   required: true
-  label: Extra SANs
-- variable: vcluster.exportKubeConfig.context
-  description: "Context name"
-  type: string
-  required: true
-  label: Kubeconfig context
-- variable: vcluster.exportKubeConfig.server
-  description: "API Server url"
-  type: string
-  required: true
-  label: Kubeconfig Server
+  label: k3s version

@@ -1,0 +1,34 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: {{ .Values.name }}
+spec:
+  targetNamespace: {{ .Values.name }}
+  createNamespace: true
+  chart: vcluster
+  version: 0.20.0-beta.11
+  repo: https://charts.loft.sh
+  valuesContent: |
+    controlPlane:
+      distro:
+        k3s:
+          enabled: true
+          image:
+            tag: v1.27.6-k3s1
+      ingress:
+        enabled: true
+        host: {{ .Values.name }}.k3z.eu
+      proxy:
+        extraSANs:
+        - {{ .Values.name }}.k3z.eu
+      service:
+        spec:
+          type: NodePort
+    exportKubeConfig:
+      context: {{ .Values.name }}
+      server: https://{{ .Values.name }}.k3z.eu
+    sync:
+      toHost:
+        ingresses:
+          enabled: true
+      

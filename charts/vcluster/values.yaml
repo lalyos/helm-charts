@@ -1,26 +1,2 @@
-
-
-vcluster:
-  controlPlane:
-    distro:
-      k3s:
-        enabled: true
-        image:
-          tag: v1.27.6-k3s1
-    ingress:
-      enabled: true
-      host: KLUSTER.k3z.eu
-    proxy:
-      extraSANs:
-      - KLUSTER.k3z.eu
-    service:
-      spec:
-        type: NodePort
-  exportKubeConfig:
-    context: KLUSTER
-    server: http://KLUSTER.k3z.eu
-  sync:
-    toHost:
-      ingresses:
-        enabled: true
-    
+name: kluster
+version: v1.28.11+k3s1
