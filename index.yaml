@@ -81,4 +81,15 @@ entries:
     urls:
     - https://github.com/lalyos/helm-charts/releases/download/12factor-0.1.1/12factor-0.1.1.tgz
     version: 0.1.1
+  vcluster:
+  - apiVersion: v2
+    appVersion: 0.20.0-beta.11
+    created: "2024-06-29T14:13:00.523267543Z"
+    description: A Helm chart for Loft VCluster
+    digest: fcd1bbccc1092bbfb8b362a3f1cbeeca212c8a9e0c82d7491391679770b61dcf
+    name: vcluster
+    type: application
+    urls:
+    - https://github.com/lalyos/helm-charts/releases/download/vcluster-0.1.0/vcluster-0.1.0.tgz
+    version: 0.1.0
 generated: "2022-12-06T08:10:25.412452998Z"
