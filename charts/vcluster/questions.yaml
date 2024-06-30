@@ -10,11 +10,11 @@ questions:
   description: "k3s release"
   type: enum
   options:
-  - v1.25.16+k3s4
-  - v1.26.15+k3s1
-  - v1.27.15+k3s1
-  - v1.28.11+k3s1
-  - v1.29.6+k3s1
-  - v1.30.2+k3s1
+  - v1.25.16-k3s4
+  - v1.26.15-k3s1
+  - v1.27.15-k3s1
+  - v1.28.11-k3s1
+  - v1.29.6-k3s1
+  - v1.30.2-k3s1
   required: true
   label: k3s version
