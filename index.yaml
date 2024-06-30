@@ -84,6 +84,16 @@ entries:
   vcluster:
   - apiVersion: v2
     appVersion: 0.20.0-beta.11
+    created: "2024-06-30T07:35:13.31618679Z"
+    description: A Helm chart for Loft VCluster
+    digest: 52d5eb7bd750dac93719f2346a026f9104f8df6e1b5a494eab342e58560c7fa3
+    name: vcluster
+    type: application
+    urls:
+    - https://github.com/lalyos/helm-charts/releases/download/vcluster-0.1.5/vcluster-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: 0.20.0-beta.11
     created: "2024-06-30T07:11:08.812913091Z"
     description: A Helm chart for Loft VCluster
     digest: e8290672e8592cd62b391c3a5147403d22eb2c94753fdce7b5e490160cad2a17
