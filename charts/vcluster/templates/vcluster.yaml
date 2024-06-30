@@ -14,7 +14,7 @@ spec:
         k3s:
           enabled: true
           image:
-            tag: v1.27.6-k3s1
+            tag: {{ .Values.version }}
       ingress:
         enabled: true
         host: {{ .Values.name }}.k3z.eu
