@@ -84,6 +84,16 @@ entries:
   one-web:
   - apiVersion: v2
     appVersion: 0.69.0
+    created: "2024-07-01T09:55:27.487110488Z"
+    description: A Helm chart for Kubernetes
+    digest: 0c0dac28521e315b23ff85b22e19ea97941986dc030323e56e599086a279ca04
+    name: one-web
+    type: application
+    urls:
+    - https://github.com/lalyos/helm-charts/releases/download/one-web-0.1.1/one-web-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.69.0
     created: "2024-07-01T09:47:44.457661048Z"
     description: A Helm chart for Kubernetes
     digest: 06ffc11a09ba20a69e0e9912e94df64517908a75ac71227b424f3bffb812291e
