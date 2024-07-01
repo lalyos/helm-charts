@@ -81,6 +81,17 @@ entries:
     urls:
     - https://github.com/lalyos/helm-charts/releases/download/12factor-0.1.1/12factor-0.1.1.tgz
     version: 0.1.1
+  one-web:
+  - apiVersion: v2
+    appVersion: 0.69.0
+    created: "2024-07-01T09:47:44.457661048Z"
+    description: A Helm chart for Kubernetes
+    digest: 06ffc11a09ba20a69e0e9912e94df64517908a75ac71227b424f3bffb812291e
+    name: one-web
+    type: application
+    urls:
+    - https://github.com/lalyos/helm-charts/releases/download/one-web-0.1.0/one-web-0.1.0.tgz
+    version: 0.1.0
   vcluster:
   - apiVersion: v2
     appVersion: 0.20.0-beta.11
