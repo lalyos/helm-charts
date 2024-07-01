@@ -1,0 +1,25 @@
+categories:
+- cluster
+questions:
+- variable: title
+  description: "Title of the Webpage"
+  type: string
+  required: true
+  label: Website title
+- variable: color
+  description: "background color"
+  type: enum
+  options:
+  - mediumpurple
+  - cyan
+  - yellow
+  - orange
+  - hotpink
+  - red
+  required: true
+  label: Color
+- variable: tld
+  description: "Top level domain. Host will be <release>.<tld>"
+  type: string
+  required: true
+  label: Top Level Domain
