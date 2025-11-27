@@ -3,6 +3,16 @@ entries:
   12factor:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-11-27T11:47:33.79788394Z"
+    description: A Helm chart for a simple 12factor sample
+    digest: 1d7dda6096a69d9c995491e072d9f740ed6e88254280f6a25fe7f8ab43ff9fc3
+    name: 12factor
+    type: application
+    urls:
+    - https://github.com/lalyos/helm-charts/releases/download/12factor-0.1.9/12factor-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2024-06-19T05:46:42.841735481Z"
     description: A Helm chart for a simple 12factor sample
     digest: a8f2d05f3e46e06dba9719e2f411da2464d14abf4a5640753999f5366a66b237
